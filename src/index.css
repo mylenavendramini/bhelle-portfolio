@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+body {
+  margin: 0;
+  font-family: "Reem Kufi Fun", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: scale;
+}
+
+code {
+  font-family: "Reem Kufi Fun", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+:root {
+  --background: black;
+  --text-primary: white;
+  --text-secondary: rgb(109, 106, 106);
+  --accent: darkred;
+}
+
+/**/
