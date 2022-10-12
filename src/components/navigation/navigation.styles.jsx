@@ -14,7 +14,7 @@ export const NavBarContainer = styled.div`
   z-index: 20;
   top: 0;
 
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 1200px) {
     justify-content: left;
   }
 
@@ -44,7 +44,7 @@ export const Logo = styled.div`
     color: var(--text-primary);
     background-color: var(--background);
 
-    @media only screen and (max-width: 1100px) {
+    @media only screen and (max-width: 1200px) {
       margin-left: 1rem;
     }
   }
@@ -54,7 +54,7 @@ export const NavLinks = styled.div`
   text-align: center;
   display: flex;
 
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 1200px) {
     display: none;
   }
 

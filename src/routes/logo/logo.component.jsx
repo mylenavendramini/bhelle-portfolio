@@ -14,6 +14,10 @@ const Logo = () => {
             <FadeInDiv>
               <Link to="/home">
                 ISABHELLE <br /> DAMBROS
+                <div id="left"></div>
+                <div id="right"></div>
+                <div id="bottom"></div>
+                <div id="top"></div>
               </Link>
             </FadeInDiv>
           </PulseDiv>

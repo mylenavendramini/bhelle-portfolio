@@ -25,7 +25,7 @@ const Navigation = () => {
         <NavLinks>
           <NavLink to={"/home"}>HOME</NavLink>
           <NavLink to={"/home/costume-design"}>COSTUME</NavLink>
-          <NavLink to={"/home/styling"}>STYLING</NavLink>
+          <NavLink to={"/styling"}>STYLING</NavLink>
           <NavLink to={"/about"}>ABOUT</NavLink>
           <NavLink to={"/contact"}>CONTACT</NavLink>
 

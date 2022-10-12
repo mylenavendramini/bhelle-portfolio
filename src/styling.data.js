@@ -1,75 +1,21 @@
-const styling = [
+const stylings = [
   {
-    id: "styling-teste",
-    name: "styling-teste Projects",
+    id: "styling",
+    name: "Styling",
     projects: [
       {
-        id: "1-styling",
-        name: "1",
-        imageUrl: "https://i.ibb.co/k3L9kNr/book2.png",
+        id: "wuthering",
+        name: "Wuthering Editorial",
+        imageUrl:
+          "https://i.ibb.co/grDz8yw/Screenshot-2022-10-12-at-11-36-15.png",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "A photoshoot to a styling class based in Paranapiacaba, with the theme of teenage love in the fiction wuthering heights. Photography by Karol Frosi, Make by Caroline Rivera, Styling and Conception Isabhelle Dambros, Models: Marcelo Barbosa, Lucas Braga, Débora Brandão.",
       },
       {
-        id: "2-styling",
-        name: "2",
-        imageUrl: "https://i.ibb.co/k3L9kNr/book2.png",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      },
-      {
-        id: "3-styling",
-        name: "3",
-        imageUrl: "https://i.ibb.co/k3L9kNr/book2.png",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      },
-      {
-        id: "4-styling",
-        name: "4",
-        imageUrl: "https://i.ibb.co/k3L9kNr/book2.png",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      },
-      {
-        id: "5-styling",
-        name: "5",
-        imageUrl: "https://i.ibb.co/k3L9kNr/book2.png",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      },
-      {
-        id: "6-styling",
-        name: "6",
-        imageUrl: "https://i.ibb.co/k3L9kNr/book2.png",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      },
-      {
-        id: "7-styling",
-        name: "7",
-        imageUrl: "https://i.ibb.co/k3L9kNr/book2.png",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      },
-      {
-        id: "8-styling",
-        name: "8",
-        imageUrl: "https://i.ibb.co/k3L9kNr/book2.png",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      },
-      {
-        id: "9-styling",
-        name: "9",
-        imageUrl: "https://i.ibb.co/k3L9kNr/book2.png",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      },
-      {
-        id: "10-styling",
-        name: "10",
-        imageUrl: "https://i.ibb.co/k3L9kNr/book2.png",
+        id: "political-blood",
+        name: "Political Blood",
+        imageUrl:
+          "https://i.ibb.co/PwxnPH5/Screenshot-2022-10-12-at-11-06-18.png",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
@@ -77,8 +23,22 @@ const styling = [
   },
 ];
 
-export function getStyling() {
-  return styling;
+export function getStylings() {
+  return stylings;
 }
 
-export default styling;
+export function getTopic(topicId) {
+  return stylings.find(({ id }) => id === topicId);
+}
+
+export function getAllStyling() {
+  return stylings.find(({ id }) => id === "styling").projects;
+}
+
+export function getProject({ projectId, topicId }) {
+  return stylings
+    .find(({ id }) => id === topicId)
+    .projects.find(({ id }) => id === projectId);
+}
+
+export default stylings;

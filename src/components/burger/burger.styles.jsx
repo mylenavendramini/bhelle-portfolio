@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledBurger = styled.button`
   display: none;
 
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 1200px) {
     display: flex;
     position: absolute;
     top: 1.3rem;

@@ -21,6 +21,49 @@ export const LogoContainer = styled.div`
   text-align: center;
   justify-content: center;
   align-items: center;
+  /* margin-left: 5rem; */
+
+  #top:before {
+    content: "";
+    position: absolute;
+    left: -6%;
+    top: 0;
+    height: 5px;
+    width: 40%;
+    margin-top: -2px;
+    border-top: 2px solid white;
+  }
+
+  #bottom:before {
+    content: "";
+    position: absolute;
+    right: -6%;
+    bottom: 0;
+    height: 5px;
+    width: 40%;
+    border-bottom: 2px solid white;
+  }
+
+  #left:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -2%;
+    height: 60px;
+    width: 50%;
+    margin-left: -12px;
+    border-left: 2px solid white;
+  }
+
+  #right:before {
+    content: "";
+    position: absolute;
+    right: -6%;
+    bottom: 0;
+    height: 60px;
+    width: 50%;
+    border-right: 2px solid white;
+  }
 
   a {
     font-size: 2rem;

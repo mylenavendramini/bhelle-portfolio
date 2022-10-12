@@ -9,6 +9,7 @@ export const ProjectsGrid = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   justify-items: center;
+  align-items: center;
   margin-top: 6rem;
 
   @media only screen and (max-width: 1100px) {

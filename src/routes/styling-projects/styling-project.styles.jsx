@@ -1,15 +1,11 @@
 import styled from "styled-components";
 
-export const CostumeProjectContainer = styled.div`
-  margin: 6rem 0 6rem 0;
+export const StylingProjectContainer = styled.div`
+  padding: 6rem;
   justify-content: center;
   justify-items: center;
   justify-self: center;
-
-  @media only screen and (max-width: 1200px) {
-    margin: 3rem 0 3rem 0;
-    padding: 1rem;
-  }
+  text-align: center;
 
   @media only screen and (max-width: 800px) {
     margin: 0;
@@ -19,8 +15,12 @@ export const CostumeProjectContainer = styled.div`
   h1 {
     text-transform: uppercase;
     text-align: center;
-    /* margin-bottom: 6rem; */
+    margin-bottom: 6rem;
     letter-spacing: 4px;
+  }
+
+  img {
+    width: 80%;
   }
 
   h2 {
@@ -28,18 +28,19 @@ export const CostumeProjectContainer = styled.div`
     margin-top: 6rem;
     letter-spacing: 2px;
     text-align: justify;
-
-    @media only screen and (max-width: 1200px) {
-      margin-bottom: 2rem;
-      margin-top: 2rem;
-    }
   }
 `;
 
-export const VideoContainer = styled.div`
-  text-align: center;
+export const ImageContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 
-  iframe {
+  img {
     width: 100%;
+  }
+
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
   }
 `;

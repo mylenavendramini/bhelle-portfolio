@@ -20,6 +20,10 @@ import Contact from "./routes/contact/contact.component";
 import CostumeProject from "./components/projects/costume-project.component";
 import Logo from "./routes/logo/logo.component";
 
+import WhutheringProject from "./routes/styling-projects/whuthering.component";
+import PoliticalBloodProject from "./routes/styling-projects/political-blood.component";
+import Stylings from "./components/stylings/stylings.component";
+
 function App() {
   useEffect(() => {
     AOS.init();
@@ -41,12 +45,20 @@ function App() {
         >
           <Route path="/about" element={<About />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/styling" element={<Stylings />} />
+          <Route path="/whuthering" element={<WhutheringProject />} />
+          <Route path="/political-blood" element={<PoliticalBloodProject />} />
 
           <Route path="/contact/" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
 
-          <Route path="/home/*" element={<Topics />}>
+          {/* <Route path="/home/*" element={<Topics />}>
             <Route path=":topicId" element={<Costume />}>
+              <Route path=":projectId" element={<CostumeProject />} />
+            </Route>
+        </Route>*/}
+          <Route path="/home/*" element={<Topics />}>
+            <Route path=":topicId/*" element={<Costume />}>
               <Route path=":projectId" element={<CostumeProject />} />
             </Route>
           </Route>

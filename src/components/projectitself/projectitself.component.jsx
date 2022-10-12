@@ -23,7 +23,7 @@ const ProjectItSelf = () => {
           <ImageWrap key={sub.id}>
             <FadeIn5Div>
               <TextWrap>
-                <Link to={sub.id} target="_blank">
+                <Link to={sub.id}>
                   {" "}
                   <img src={sub.imageUrl} alt={`${sub.name}`} />
                 </Link>

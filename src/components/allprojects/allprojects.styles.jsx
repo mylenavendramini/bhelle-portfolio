@@ -5,6 +5,7 @@ export const ProjectsGrid = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   justify-items: center;
+  align-items: center;
   margin-top: 6rem;
 
   @media only screen and (max-width: 1100px) {
@@ -43,6 +44,11 @@ export const ImageWrap = styled.div`
   img {
     width: 100%;
     filter: grayscale(100%);
+    /* height: 20rem; */
+
+    @media only screen and (max-width: 900px) {
+      height: 20rem;
+    }
   }
 
   h2 {
