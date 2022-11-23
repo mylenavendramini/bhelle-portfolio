@@ -22,20 +22,27 @@ const About = () => {
         <FadeIn5Div>
           <ProjectsGrid>
             <img
-              src="https://i.ibb.co/KNMTHr9/temporary-Bhelle.jpg"
-              alt="libertos"
+              src="https://i.ibb.co/kMzzHjr/64-D9-B6-EF-D21-A-4-FF8-B490-5-C4868-C6.jpg"
+              alt="profile-1"
             />
             <img
-              src="https://i.ibb.co/KNMTHr9/temporary-Bhelle.jpg"
-              alt="libertos"
+              src="https://i.ibb.co/dgqZjM9/1494-FF6-A-3-D18-43-D4-813-A-E15333-D7.jpg"
+              alt="profile-2"
             />
           </ProjectsGrid>
         </FadeIn5Div>
         <FadeIn8Div>
           <h1>About</h1>
           <h2>
-            Isabhelle Dambros is a 24 years old Brazilian Costume Designer based
-            in London, with experience in TV, Movies and Photoshoots.
+            Brazilian born, but currently living in London and working as a
+            costume supervisor. After spending time in the industry for many
+            years in Brazil I wanted to move to the UK as there is more
+            opportunity for career progression. Since arriving here I have
+            worked on several TV dramas covering a range of different historical
+            periods as well as modern day. I feel confident working in a variety
+            of different roles, however my most recent jobs have been primarily
+            as a supervisor and I am hoping to move for a more creative role
+            where I can go back to design.
           </h2>
         </FadeIn8Div>
         <FadeIn10Div>

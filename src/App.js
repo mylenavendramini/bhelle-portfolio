@@ -20,7 +20,7 @@ import Contact from "./routes/contact/contact.component";
 import CostumeProject from "./components/projects/costume-project.component";
 import Logo from "./routes/logo/logo.component";
 
-import WhutheringProject from "./routes/styling-projects/whuthering.component";
+import WutheringProject from "./routes/styling-projects/wuthering.component";
 import PoliticalBloodProject from "./routes/styling-projects/political-blood.component";
 import Stylings from "./components/stylings/stylings.component";
 
@@ -46,7 +46,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/home" element={<Home />} />
           <Route path="/styling" element={<Stylings />} />
-          <Route path="/whuthering" element={<WhutheringProject />} />
+          <Route path="/wuthering" element={<WutheringProject />} />
           <Route path="/political-blood" element={<PoliticalBloodProject />} />
 
           <Route path="/contact/" element={<Contact />} />

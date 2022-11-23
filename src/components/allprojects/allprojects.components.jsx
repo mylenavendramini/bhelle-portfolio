@@ -59,16 +59,16 @@ export const AllProjects = () => {
       <ImageWrap>
         <FadeIn5Div>
           <TextWrap>
-            <Link onClick={scrollToTop} to="/whuthering">
+            <Link onClick={scrollToTop} to="/wuthering">
               {" "}
               <img
                 src="https://i.ibb.co/zfrdWBJ/Screen-Shot-2017-11-03-at-01-11-37.png"
-                alt="Whuthering"
+                alt="Wuthering"
               />
             </Link>
             <Underline></Underline>
-            <Link onClick={scrollToTop} to="/whuthering">
-              <h2>Whuthering</h2>
+            <Link onClick={scrollToTop} to="/wuthering">
+              <h2>Wuthering</h2>
             </Link>
           </TextWrap>
         </FadeIn5Div>

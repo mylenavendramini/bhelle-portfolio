@@ -36,12 +36,19 @@ export const ProjectsGrid = styled.div`
 
   img {
     width: 100%;
+    filter: grayscale(100%);
 
     &:nth-child(1) {
+      &:hover {
+        filter: grayscale(0%);
+      }
     }
 
     &:nth-child(2) {
       margin-top: 3rem;
+      &:hover {
+        filter: grayscale(0%);
+      }
     }
   }
 
