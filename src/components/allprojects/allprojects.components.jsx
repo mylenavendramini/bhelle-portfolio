@@ -17,17 +17,20 @@ import { FadeIn5Div } from "../../animation";
 
 export const AllProjects = () => {
   const allProjects = getAllprojects();
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <ProjectsGrid>
       {allProjects.map((sub) => (
         <ImageWrap key={sub.id}>
           <FadeIn5Div>
             <TextWrap>
-              <Link to={`/home/all/${sub.id}`}>
+              <Link onClick={scrollToTop} to={`/home/all/${sub.id}`}>
                 <h2>{sub.name}</h2>
               </Link>
               <Underline></Underline>
-              <Link to={`/home/all/${sub.id}`}>
+              <Link onClick={scrollToTop} to={`/home/all/${sub.id}`}>
                 {" "}
                 <img src={sub.imageUrl} alt={`${sub.name}`} />
               </Link>
@@ -38,7 +41,7 @@ export const AllProjects = () => {
       <ImageWrap>
         <FadeIn5Div>
           <TextWrap>
-            <Link to="/political-blood" target="_blank">
+            <Link onClick={scrollToTop} to="/political-blood" target="_blank">
               {" "}
               <img
                 src="https://i.ibb.co/PwxnPH5/Screenshot-2022-10-12-at-11-06-18.png"
@@ -46,7 +49,7 @@ export const AllProjects = () => {
               />
             </Link>
             <Underline></Underline>
-            <Link to="/political-blood">
+            <Link onClick={scrollToTop} to="/political-blood">
               <h2>Political Blood</h2>
             </Link>
           </TextWrap>
@@ -56,7 +59,7 @@ export const AllProjects = () => {
       <ImageWrap>
         <FadeIn5Div>
           <TextWrap>
-            <Link to="/whuthering">
+            <Link onClick={scrollToTop} to="/whuthering">
               {" "}
               <img
                 src="https://i.ibb.co/zfrdWBJ/Screen-Shot-2017-11-03-at-01-11-37.png"
@@ -64,7 +67,7 @@ export const AllProjects = () => {
               />
             </Link>
             <Underline></Underline>
-            <Link to="/whuthering">
+            <Link onClick={scrollToTop} to="/whuthering">
               <h2>Whuthering</h2>
             </Link>
           </TextWrap>

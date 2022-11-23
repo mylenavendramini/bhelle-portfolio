@@ -15,6 +15,10 @@ const Navigation = () => {
   });
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <Fragment>
       <NavBarContainer>
@@ -23,11 +27,21 @@ const Navigation = () => {
         </Logo>
 
         <NavLinks>
-          <NavLink to={"/home"}>HOME</NavLink>
-          <NavLink to={"/home/costume-design"}>COSTUME</NavLink>
-          <NavLink to={"/styling"}>STYLING</NavLink>
-          <NavLink to={"/about"}>ABOUT</NavLink>
-          <NavLink to={"/contact"}>CONTACT</NavLink>
+          <NavLink onClick={scrollToTop} to={"/home"}>
+            HOME
+          </NavLink>
+          <NavLink onClick={scrollToTop} to={"/home/costume-design"}>
+            COSTUME
+          </NavLink>
+          <NavLink onClick={scrollToTop} to={"/styling"}>
+            STYLING
+          </NavLink>
+          <NavLink onClick={scrollToTop} to={"/about"}>
+            ABOUT
+          </NavLink>
+          <NavLink onClick={scrollToTop} to={"/contact"}>
+            CONTACT
+          </NavLink>
 
           <a
             href="https://www.imdb.com/name/nm12811124/?ref_=fn_al_nm_1"

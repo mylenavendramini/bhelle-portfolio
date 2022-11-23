@@ -16,6 +16,10 @@ const ProjectItSelf = () => {
   const { topicId } = useParams();
   const topic = getTopic(topicId);
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <Fragment>
       <ProjectsGrid>
@@ -23,12 +27,12 @@ const ProjectItSelf = () => {
           <ImageWrap key={sub.id}>
             <FadeIn5Div>
               <TextWrap>
-                <Link to={sub.id}>
+                <Link onClick={scrollToTop} to={sub.id}>
                   {" "}
                   <img src={sub.imageUrl} alt={`${sub.name}`} />
                 </Link>
                 <Underline></Underline>
-                <Link to={sub.id}>
+                <Link onClick={scrollToTop} to={sub.id}>
                   <h2>{sub.name}</h2>
                 </Link>
               </TextWrap>

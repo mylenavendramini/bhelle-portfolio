@@ -5,30 +5,45 @@ import { bool } from "prop-types";
 // import { TadaAnimation } from "../../animation";
 
 const Menu = ({ isBurgerOpen }) => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <Fragment>
       <StyledMenu isBurgerOpen={isBurgerOpen}>
         <Logo>
-          <a href="/">ISABHELLE DAMBROS</a>
+          <a onClick={scrollToTop} href="/">
+            ISABHELLE DAMBROS
+          </a>
         </Logo>
         <ul>
           <li>
-            <a href={"/home"}>HOME</a>
+            <a onClick={scrollToTop} href={"/home"}>
+              HOME
+            </a>
           </li>
           <li>
             {" "}
-            <a href={"/home/costume-design"}>COSTUME</a>
+            <a onClick={scrollToTop} href={"/home/costume-design"}>
+              COSTUME
+            </a>
           </li>
           <li>
             {" "}
-            <a href={"/home/styling"}>STYLING</a>
+            <a onClick={scrollToTop} href={"/home/styling"}>
+              STYLING
+            </a>
           </li>
           <li>
-            <a href={"/about"}>ABOUT</a>
+            <a onClick={scrollToTop} href={"/about"}>
+              ABOUT
+            </a>
           </li>
           <li>
             {" "}
-            <a href={"/contact"}>CONTACT</a>
+            <a onClick={scrollToTop} href={"/contact"}>
+              CONTACT
+            </a>
           </li>
           <li>
             <a

@@ -13,6 +13,9 @@ import { FadeIn5Div, FadeIn8Div, FadeIn10Div } from "../../animation";
 
 const About = () => {
   const AllProjects = getAllprojects();
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div>
       <AboutContainer>
@@ -41,11 +44,11 @@ const About = () => {
             {AllProjects.filter((_, idx) => idx < 3).map((sub) => (
               <ImageWrap key={sub.id}>
                 <TextWrap>
-                  <Link to={`/home/all/${sub.id}`}>
+                  <Link onClick={scrollToTop} to={`/home/all/${sub.id}`}>
                     <h2>{sub.name}</h2>
                   </Link>
                   <Underline></Underline>
-                  <Link to={`/home/all/${sub.id}`}>
+                  <Link onClick={scrollToTop} to={`/home/all/${sub.id}`}>
                     {" "}
                     <img src={sub.imageUrl} alt={`${sub.name}`} />
                   </Link>
