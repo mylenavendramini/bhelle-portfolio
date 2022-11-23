@@ -41,6 +41,7 @@ export const ProjectsGrid = styled.div`
     &:nth-child(1) {
       &:hover {
         filter: grayscale(0%);
+        transition: all 0.5s;
       }
     }
 
@@ -48,6 +49,7 @@ export const ProjectsGrid = styled.div`
       margin-top: 3rem;
       &:hover {
         filter: grayscale(0%);
+        transition: all 0.5s;
       }
     }
   }
