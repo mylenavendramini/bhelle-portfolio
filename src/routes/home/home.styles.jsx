@@ -14,8 +14,9 @@ export const HomeContainer = styled.div`
     gap: 2rem;
   }
 
-  @media only screen and (max-width: 800px) {
-    grid-template-columns: 1fr;
+  @media only screen and (max-width: 880px) {
+    margin: 1rem;
+    gap: 1rem;
   }
 `;
 
@@ -42,6 +43,10 @@ export const ImageWrap = styled.div`
     text-transform: uppercase;
     letter-spacing: 2px;
     background: transparent;
+
+    @media only screen and (max-width: 600px) {
+      left: 16%;
+    }
   }
 
   &:hover img {
