@@ -25,12 +25,12 @@ export const HomeContainer = styled.div`
     }
 
     @media only screen and (max-width: 500px) {
-      left: 12%;
+      left: 11%;
     }
   }
   #styling {
     @media only screen and (max-width: 700px) {
-      left: 17%;
+      left: 15%;
     }
   }
 `;
