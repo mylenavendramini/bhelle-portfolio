@@ -1,12 +1,10 @@
 import { Outlet } from "react-router-dom";
-import { HomeContainer } from "./home.styles.jsx";
+import { HomeContainer, ImageWrap, TextWrap } from "./home.styles.jsx";
 
-import { getTopics } from "../../projects.data.js";
-import AllProjects from "../../components/allprojects/allprojects.components";
 import { Link } from "react-router-dom";
+import { FadeIn5Div } from "../../animation";
 
 const Home = () => {
-  const topics = getTopics();
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
@@ -14,23 +12,37 @@ const Home = () => {
     <div>
       <Outlet />
       <HomeContainer>
-        {/* <h1>COSTUME TEST</h1>
-        <Link onClick={scrollToTop} to={"/home/costume-design"}>
-          COSTUME
-        </Link>
+        <ImageWrap>
+          <FadeIn5Div>
+            <TextWrap>
+              <Link onClick={scrollToTop} to={"/home/costume-design"}>
+                <h2 id="costume">COSTUME</h2>
+              </Link>
 
-        <h1>STYLING TEST</h1>
-        <Link onClick={scrollToTop} to={"/styling"}>
-          STYLING
-  </Link>*/}
-        {topics.map(({ name, id }) => (
-          <div key={id}>
-            {/*<Link to={id}>
-                <h1>{name}</h1>
-          </Link>*/}
-          </div>
-        ))}
-        <AllProjects />
+              <Link onClick={scrollToTop} to={"/home/costume-design"}>
+                {" "}
+                <img src="https://i.ibb.co/7QtnQZj/LP-8522.png" alt="costume" />
+              </Link>
+            </TextWrap>
+          </FadeIn5Div>
+        </ImageWrap>
+        <ImageWrap>
+          <FadeIn5Div>
+            <TextWrap>
+              <Link onClick={scrollToTop} to={"/styling"}>
+                <h2 id="styling">STYLING</h2>
+              </Link>
+
+              <Link onClick={scrollToTop} to={"/styling"}>
+                {" "}
+                <img
+                  src="https://i.ibb.co/7WHnXZk/Screen-Shot-2017-11-03-at-01-11-32.png"
+                  alt="styling"
+                />
+              </Link>
+            </TextWrap>
+          </FadeIn5Div>
+        </ImageWrap>
       </HomeContainer>
     </div>
   );

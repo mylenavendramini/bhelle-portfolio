@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BackgroundLogo = styled.div`
-  background-image: url("https://i.ibb.co/4PVgrJC/temporary-Celo.jpg");
+  background-image: url("https://i.ibb.co/hX2JdXj/LP-8102.jpg");
   background-position: center;
   background-color: var(--background);
   background-repeat: no-repeat;

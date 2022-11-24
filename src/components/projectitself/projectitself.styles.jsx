@@ -12,7 +12,7 @@ export const ProjectsGrid = styled.div`
   align-items: center;
   margin-top: 6rem;
 
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 1200px) {
     grid-template-columns: repeat(2, 1fr);
   }
 

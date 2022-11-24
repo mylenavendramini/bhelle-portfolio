@@ -20,6 +20,10 @@ a {
   color: var(--text-primary);
 }
 
+h2 {
+  text-shadow: black 1px 0 15px;
+}
+
 :root {
   --background: black;
   --text-primary: white;

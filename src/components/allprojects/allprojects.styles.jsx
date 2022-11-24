@@ -55,8 +55,6 @@ export const ImageWrap = styled.div`
     position: absolute;
     z-index: 11;
     text-align: center;
-    /* top: 40%;
-    left: 50%; */
     top: 40%;
     left: -80%;
     width: 100%;

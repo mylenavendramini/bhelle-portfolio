@@ -30,7 +30,7 @@ const topics = [
       {
         id: "the-orixas",
         name: "The Orixas",
-        imageUrl: "https://i.ibb.co/j61YF7m/IMG-1910.png",
+        imageUrl: "https://i.ibb.co/BLNY4BP/IMG-1910-1.png",
         video: "https://www.youtube.com/embed/zUu8Pc5MurA",
         description:
           "The intention of my final project was to give a deepened and demystified view of one of the religions that is practiced by a large part of the Brazilian low and middle-class population, and still suffers a lot of prejudice because it is considered black magic.My goal was to show a little bit of the history of my country and how the Umbanda is part of our roots.",
@@ -81,6 +81,7 @@ const topics = [
   {
     id: "costume-design",
     name: "Costume Design",
+    imageUrl: "https://i.ibb.co/7QtnQZj/LP-8522.png",
     projects: [
       {
         id: "libertos",
@@ -110,7 +111,7 @@ const topics = [
       {
         id: "the-orixas",
         name: "The Orixas",
-        imageUrl: "https://i.ibb.co/j61YF7m/IMG-1910.png",
+        imageUrl: "https://i.ibb.co/BLNY4BP/IMG-1910-1.png",
         video: "https://www.youtube.com/embed/zUu8Pc5MurA",
         description:
           "The intention of my final project was to give a deepened and demystified view of one of the religions that is practiced by a large part of the Brazilian low and middle-class population, and still suffers a lot of prejudice because it is considered black magic.My goal was to show a little bit of the history of my country and how the Umbanda is part of our roots.",
@@ -161,6 +162,7 @@ const topics = [
   {
     id: "styling",
     name: "Styling",
+    imageUrl: "https://i.ibb.co/7WHnXZk/Screen-Shot-2017-11-03-at-01-11-32.png",
     projects: [
       {
         id: "wuthering",
