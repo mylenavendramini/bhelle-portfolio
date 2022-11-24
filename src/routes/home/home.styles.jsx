@@ -18,6 +18,21 @@ export const HomeContainer = styled.div`
     margin: 1rem;
     gap: 1rem;
   }
+
+  #costume {
+    @media only screen and (max-width: 700px) {
+      left: 20%;
+    }
+
+    @media only screen and (max-width: 500px) {
+      left: 12%;
+    }
+  }
+  #styling {
+    @media only screen and (max-width: 700px) {
+      left: 17%;
+    }
+  }
 `;
 
 export const TextWrap = styled.div`
@@ -43,10 +58,6 @@ export const ImageWrap = styled.div`
     text-transform: uppercase;
     letter-spacing: 2px;
     background: transparent;
-
-    @media only screen and (max-width: 600px) {
-      left: 16%;
-    }
   }
 
   &:hover img {
