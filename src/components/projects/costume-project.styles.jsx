@@ -11,11 +11,6 @@ export const CostumeProjectContainer = styled.div`
     padding: 1rem;
   }
 
-  @media only screen and (max-width: 800px) {
-    margin: 0;
-    padding: 1rem;
-  }
-
   h1 {
     text-transform: uppercase;
     text-align: center;
