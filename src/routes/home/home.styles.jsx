@@ -30,7 +30,7 @@ export const HomeContainer = styled.div`
   }
   #styling {
     @media only screen and (max-width: 700px) {
-      left: 15%;
+      left: 13%;
     }
   }
 `;
