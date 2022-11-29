@@ -10,9 +10,11 @@ import { Outlet } from "react-router-dom";
 const Navigation = () => {
   //burger
   const node = useRef();
+
   useOnClickOutside(node, () => {
     setIsBurgerOpen(false);
   });
+
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
 
   const scrollToTop = () => {

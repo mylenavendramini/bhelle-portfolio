@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { StyledMenu, Logo, NavLink } from "./menu.styles";
+import { StyledMenu, Logo } from "./menu.styles";
 import { bool } from "prop-types";
 
 // import { TadaAnimation } from "../../animation";

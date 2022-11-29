@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export const StyledMenu = styled.nav`
   /* display: flex; */
@@ -68,8 +68,4 @@ export const Logo = styled.div`
     text-decoration: none;
     color: var(--text-primary);
   }
-`;
-
-export const NavLink = styled(Link)`
-  cursor: pointer;
 `;
