@@ -36,6 +36,9 @@ export const VideoContainer = styled.div`
 
   iframe {
     width: 100%;
-    height: auto;
+
+    @media only screen and (max-width: 900px) {
+      height: auto;
+    }
   }
 `;
