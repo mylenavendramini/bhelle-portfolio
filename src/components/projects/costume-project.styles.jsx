@@ -26,7 +26,7 @@ export const CostumeProjectContainer = styled.div`
 
 export const VideoContainer = styled.div`
   text-align: center;
-
+  margin-top: 2rem;
   iframe {
     width: 100%;
     border: none;

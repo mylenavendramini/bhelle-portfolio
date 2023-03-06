@@ -17,11 +17,11 @@ const CostumeProject = () => {
     <div>
       <CostumeProjectContainer>
         <h1>{name}</h1>
-        <ul>
+        <div>
           {description.map((el, idx) => {
             return <li key={idx}>{el}</li>;
           })}
-        </ul>
+        </div>
         <VideoContainer>
           <iframe
             width="960"
