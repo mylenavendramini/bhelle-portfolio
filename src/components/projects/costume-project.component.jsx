@@ -12,20 +12,24 @@ const CostumeProject = () => {
     topicId,
     projectId,
   });
+
   return (
     <div>
       <CostumeProjectContainer>
         <h1>{name}</h1>
-        <h2>{description}</h2>
+        <ul>
+          {description.map((el, idx) => {
+            return <li key={idx}>{el}</li>;
+          })}
+        </ul>
         <VideoContainer>
           <iframe
             width="960"
             height="615"
             src={video}
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </VideoContainer>
       </CostumeProjectContainer>

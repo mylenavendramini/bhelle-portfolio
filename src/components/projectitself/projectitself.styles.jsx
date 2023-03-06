@@ -46,8 +46,10 @@ export const ImageWrap = styled.div`
   position: relative;
 
   img {
-    width: 100%;
+    width: 370px;
+    height: 240px;
     filter: grayscale(100%);
+    object-fit: contain;
   }
 
   h2 {

@@ -14,20 +14,13 @@ export const CostumeProjectContainer = styled.div`
   h1 {
     text-transform: uppercase;
     text-align: center;
-    /* margin-bottom: 6rem; */
     letter-spacing: 4px;
   }
 
-  h2 {
-    margin-bottom: 6rem;
-    margin-top: 6rem;
-    letter-spacing: 2px;
-    text-align: justify;
-
-    @media only screen and (max-width: 1200px) {
-      margin-bottom: 2rem;
-      margin-top: 2rem;
-    }
+  li {
+    list-style: none;
+    text-align: left;
+    font-size: 1.5rem;
   }
 `;
 
@@ -36,6 +29,7 @@ export const VideoContainer = styled.div`
 
   iframe {
     width: 100%;
+    border: none;
 
     @media only screen and (max-width: 900px) {
       height: auto;
