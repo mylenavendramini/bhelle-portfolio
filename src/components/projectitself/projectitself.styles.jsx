@@ -49,7 +49,7 @@ export const ImageWrap = styled.div`
     width: 370px;
     height: 240px;
     filter: grayscale(100%);
-    object-fit: contain;
+    object-fit: cover;
   }
 
   h2 {

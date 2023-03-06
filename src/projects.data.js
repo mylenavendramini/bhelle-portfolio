@@ -189,7 +189,7 @@ const topics = [
         id: "entre-mortos-e-vivos",
         name: "Entre mortos e vivos",
         imageUrl:
-          "https://i.ibb.co/6ybRffZ/MV5-BYm-Nh-YWE4-YTEt-NTNh-ZC00-OGUw-LWEx.jpg",
+          "https://i.ibb.co/VWjczP6/Screenshot-2023-03-06-at-10-30-27.png",
         video: "https://www.youtube.com/embed/UaaOR6Ic8BQ",
         description: [
           "Directed by Beto Ribeiro",
