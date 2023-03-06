@@ -44,14 +44,33 @@ export const Underline = styled.div`
 
 export const ImageWrap = styled.div`
   position: relative;
+  filter: grayscale(100%);
 
   img {
     width: 370px;
     height: 240px;
-    filter: grayscale(100%);
     object-fit: cover;
   }
 
+  &:hover {
+    filter: grayscale(0%);
+    transition: filter 0.5s ease-in-out;
+
+    img {
+      opacity: 0.8;
+    }
+  }
+
+  &:hover h2 {
+    visibility: visible;
+    opacity: 1;
+    left: 50%;
+  }
+
+  &:hover ${Underline} {
+    opacity: 0.5;
+    right: 15%;
+  }
   h2 {
     position: absolute;
     z-index: 11;
@@ -72,21 +91,5 @@ export const ImageWrap = styled.div`
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
     transition: all 0.5s;
-  }
-
-  &:hover h2 {
-    visibility: visible;
-    opacity: 1;
-    left: 50%;
-  }
-
-  &:hover ${Underline} {
-    opacity: 0.5;
-    right: 15%;
-  }
-
-  &:hover img {
-    opacity: 0.8;
-    filter: grayscale(0%);
   }
 `;
